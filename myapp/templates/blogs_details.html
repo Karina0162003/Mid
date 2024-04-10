@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:20:04 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>{% block title %} {% endblock %}Revolutionizing Agriculture platform</title>
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static '/css/venobox.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/scroll_button.css' %}">
+    <link rel="stylesheet" href="{% static '/css/custom_spacing.css' %}">
+    <link rel="stylesheet" href="{% static '/css/jquery.exzoom.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static '/css/percircle.css' %}">
+    <link rel="stylesheet" href="{% static '/css/ranger_slider.css' %}">
+    <link rel="stylesheet" href="{% static '/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static '/css/mobile_menu.css' %}">
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!--========================={% static '
+        TOPBAR START
+    ==========================-->
+   <section class="topbar">
+    <div class="container">
+        <div class="row">
+            <ul class="topbar_info d-flex justify-content-end align-items-center">
+                <li class="mr-3">
+                    {% if request.session.userid %}
+                        <a href="#">Welcome,{{request.session.email}}</a>
+                    {% else %}
+                        <a href="#">Welcome,User</a>
+                    {% endif %}
+                </li>
+                <li class="mr-3">
+                    <a href="mailto:revolutionizingAgriculture@gmail.com"><i class="fas fa-envelope-open-text"></i> revolutionizingAgriculture@gmail.com</a>
+                </li>
+                {% if request.session.userid %}
+                    <li><a href="{% url 'logout' %}">Log-Out</a></li>
+                {% else %}
+                    <li><a href="{% url 'sign_in' %}">Sign In</a></li>
+                    <li><a href="{% url 'sign_up' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!--=========================
+        TOPBAR END
+    ==========================-->
+
+
+    <!--=========================
+        HEADER START
+    ==========================-->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="header_logo_area">
+                        <a href="index" class="header_logo">
+                            <img src="{% static 'images/logo.png' %}" alt="Orgini" class="img-fluid w-100">
+                        </a>
+                        <div class="mobile_menu_icon d-block d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="mobile_menu_icon"><i class="far fa-stream menu_icon_bar"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </header>
+    <!--=========================
+        HEADER END
+    ==========================-->
+
+
+    <!--=========================
+        MENU START
+    ==========================-->
+
+    <!--=========================
+        MENU END
+    ==========================-->
+
+
+    <!--============================
+        MOBILE MENU START
+    ==============================-->
+
+    <!--============================
+        MOBILE MENU END
+    ==============================-->
+    <!--=========================
+        BREADCRUMB START
+    ==========================-->
+
+
+    <!--=========================
+        BLOG DETAILS START
+    ==========================-->
+    <section class="blog_details pt_10 xs_pt_80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-19 wow fadeInLeft">
+                    <div class="blog_det_area">
+                        <div class="blog_det_img">
+                            <img src="{% static 'images/guva.jpg' %}" alt="blog images" class="img-fluid w-100 ">
+                        </div>
+                        <div class="blog_det_text_header d-flex flex-wrap">
+                            <ul class="left d-flex flex-wrap">
+                                <li><span></span></li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="blog_det_text">
+                            <h2>The Ultimate Guide to Battling Guava Pests and Diseases: From Foes to Feast</h2>
+                            <p>Guava (Psidium guajava) is a common tropical fruit cultivated in many tropical and subtropical regions, which is known as poor man’s apple. It yields heavily with little inputs.</p>
+
+                            <p>In many countries, the fruit is eaten raw and sold as a popular snack in many street corners and night markets. Because of its high level of pectin, guavas are extensively used to make candies, preserves, jellies, marmalade, and juices. Guava is rich in dietary fibre and vitamin C with moderate levels of folic acid.</p>
+
+
+
+                            <p>In India guava occupies an area of 2.03 lac hectares with annual production of 22.7 lacs MT. It is one of the important commercial fruits in India, fourth most important after mango, banana, and citrus. Major guava producing states include Uttar Pradesh, Bihar, West Bengal, Maharashtra, Chhattisgarh, Tamil Nadu, Karnataka, Madhya Pradesh, Gujarat, and Andhra Pradesh.
+
+Karnataka stands ninth in production 138.8 (MT) with an area of 7.2 (‘000 ha). The properly know varieties are Allahabad Safeda, L-49, Araka Mridula, Araka Amulya, Bangalore, Dharwad, Arka Kiran, the crop is quite hardy and a prolific bearer. It is considered as a highly remunerative crop even with less input application. Therefore, the cultivation of the crop is picking up in Karnataka on commercial basis.</p>
+<h5>1.Guava Root Not Nematode</h5>
+
+<p>The worst nematode problem affecting guava is that created by root-knot nematode, which is a recognized limiting factor in commercial guava production areas. Nematode was identified as Meloidogyne enterolobii (synonym M. mayaguensis) and commonly this species has been misidentified as M. incognita or Meloidogyne spp. M. enterolobii, an emerging species of Meloidogyne, is currently considered to be one of the most damaging nematode species in many countries because the nematode has a wide geographical distribution, wide host ranges. It is considered that the nematode might have spread from other countries through saplings.</p>
+<h6>SYMPTOMS AND DAMAGE</h6>
+
+<p>Moderate infestations are associated with general yellowing, chlorosis, nutrient deficiency symptoms drying of branches and reduced flowering and fruiting. Roots of infected trees show multiple galls and root necrosis, causing a drastic decrease in fine roots. The root-knot nematode infects the whole root system, from small rhizoids to more lignified pivotants roots. Severely infected trees decline rapidly, culminating in the death of the plants, the decline and death of guava trees parasitized by Meloidogyne enterolobii is a complex disease involving other fungus sps of Fusarium solani. Verticillium & Pythium. The unseen hidden enemies of root knot nematode associated with guava can kill the tress outright within three months after the onset of symptoms.  This syndrome is making cultivation of guava in the infested areas unfeasible, causing serious economic problems to growers and the economy of the region.</p>
+<h6>Control</h6>
+
+<p>Therefore, the guava growers are requested to avoid nematode affected saplings, removal and destroying of nematode affected trees, applying farm yard manure @ 10 to 15 kg, Multiplex Annapurna 2-5 kg/ plant,  Multiplex Mahan @ 250g and Multiplex Safe Root (nematode egg parasitic fungus Paecilomyces lilacinus+ Trichoderma harzianum) @ 30g, Multiplex Trishul(VAM) @30g/tree and Bayer Velum Prime 500 ml/acre drenching 2 to 3 Liters per plants at early stage of nematode infestation to overcome the nematode problem and to enhance fruit.</p>
+
+                            <h5>2.Guava Canker</h5>
+
+
+<p>Fruit canker caused primarily by Pestalotia psidii and associated with other fungi Colletotrichum psidii was first recorded from Bombay and later from Mysore followed Thane, Dharwad, Pune, Himachal Pradesh, and Lucknow. </p>
+<h6>SYMPTOMS AND DAMAGE</h6>
+
+<p>The disease generally occurs on green fruits and rarely on leaves. The first evidence of infection on fruit is the appearance of minute, brown or rust coloured, unbroken, circular, necrotic areas, which in advanced stage of infection, tears open the epidermis in a circinate manner. The margin of lesion is elevated, and a depressed area is noticeable inside. The crater like appearance is more noticeable on fruits than on leaves. The canker is confined to a very shallow area and does not penetrate deep into the flesh of the fruit.
+
+In older cankers, white mycelium consisting of numerous spores are noticeable. Canker on the green fruits of different varieties exhibit considerable differences in their appearance. In severe cases, raised, cankerous spots develop in great numbers and the fruits break open to expose seeds. The infected fruits remain underdeveloped, become hard, malformed, and mummified and drop in great numbers. Sometimes small rusty brown angular spots appear on the leaves. In winter the cankerous spots are common but in rainy season minute red specks are formed.</p>
+<h6>Control</h6>
+
+<p>The spread of disease (in early stage of infection) is controlled by 3 to 4 spraying at One-month interval of Cuprofix 3 g/liter + Bactinash 0.3 g/litre or Kocide 2g/litre +Bactinash 0.3 g/litre or Multiplex Jodi 2 g/liter +  Bactinash 0.3 g/litre or Nagcopper 3 g/liter + Bactinash 0.3 g/litre, or Multiplex Biojodi 5 g/litre + Mahapal 3 ml/Litre +Mulitplex Biostike 2ml/Liter at 15 days interval.</p>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+        BLOG DETAILS END
+    ==========================-->
+
+
+
+    <!--=========================
+        FOOTER START
+    ==========================-->
+    <footer class="mt_200 xs_mt_160" style="background: url({% static 'images/footer_bg.jpg' }%);">
+        <div class="footer_overlay">
+            <div class="container">
+                <div class="footer_info" style="background: url(images/footer_info_bg.jpg);">
+                    <div class="row wow fadeInUp">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_1.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Free Shipping</h3>-->
+<!--                                    <p>Worldwide</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_2.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Helpline</h3>-->
+<!--                                    <p>+1256 25632 565</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_3.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>24/7 Support</h3>-->
+<!--                                    <p>Free For Customers</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_4.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                   <h3>Returns</h3>-->
+<!--                                    <p>30 Days Free Exchanges</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-8">
+                        <div class="footer_logo_area">
+
+
+                            <span>Mail :<a href="revolutionizingAgriculture@gmail.com">revolutionizingAgri@gmail.com</a></span>
+                            <p>Location : Ahmedabad,india</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Category</h3>
+                            <ul>
+                                <li><a href="shop">Rent on machinery</a></li>
+                                <li><a href="shop">Eqvipments</a></li>
+                                <li><a href="shop">Pesticides</a></li>
+                                <li><a href="shop">Fertilizer</a></li>
+                                <li><a href="shop">Seeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Products</h3>
+                            <ul>
+                                <li><a href="#">Pules</a></li>
+                                <li><a href="#">Spices</a></li>
+                                <li><a href="#">Fruits</a></li>
+                                <li><a href="#">Vegetables</a></li>
+                                <li><a href="#">Oilseeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Rent on machinery</h3>
+                            <ul>
+                                <li><a href="#">Agriculture baler</a></li>
+                                <li><a href="#">Multicrop thresher</a></li>
+                                <li><a href="#">Fertilizer spreader</a></li>
+                                <li><a href="#">Mounted disc plough</a></li>
+                                <li><a href="#">Tractor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a href="about_us">About Us</a></li>
+                                <li><a href="sign_in">Sign In</a></li>
+                                <li><a href="sign_up">Sign Up</a></li>
+                                <li><a href="contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
+    <!--=========================
+        FOOTER END
+    ==========================-->
+
+
+    <!--==========================
+        SCROLL BUTTON START
+    ===========================-->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!--==========================
+        SCROLL BUTTON END
+    ===========================-->
+
+
+    <!--jquery library js-->
+    <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>
+    <!--bootstrap js-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!--font-awesome js-->
+    <script src="{% static 'js/Font-Awesome.js' %}"></script>
+    <!--slick slider js-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!--isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--venobox js-->
+    <script src="{% static 'js/venobox.min.js' %}"></script>
+    <!--marquee animi-->
+    <script src="{% static 'js/jquery.marquee.min.js' %}"></script>
+    <!--simply countdown js-->
+    <script src="{% static 'js/simplyCountdown.js' %}"></script>
+    <!--scroll button js-->
+    <script src="{% static 'js/scroll_button.js' %}"></script>
+    <!--counter-up js-->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countup.min.js' %}"></script>
+    <!--exzoom js-->
+    <script src="{% static 'js/jquery.exzoom.js' %}"></script>
+    <!--nice select js-->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <!--percircle js-->
+    <script src="{% static 'js/percircle.js' %}"></script>
+    <!--price ranger js-->
+    <script src="{% static 'js/ranger_jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/ranger_slider.js' %}"></script>
+    <!--select2 js-->
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <!--sticky sidebar js-->
+    <script src="{% static 'js/sticky_sidebar.js' %}"></script>
+    <!--aos js-->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!--main/custom js-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:21:21 GMT -->
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolutionizing Agriculture - Invoice</title>
+    <style>
+        /* Define your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .invoice-header h1 {
+            font-size: 36px;
+            color: #4CAF50;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .invoice-details {
+            margin-bottom: 20px;
+        }
+        .invoice-details p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .invoice-items {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .invoice-items th, .invoice-items td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+        .invoice-items th {
+            background-color: #f2f2f2;
+        }
+        .invoice-total {
+            text-align: right;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .invoice-total strong {
+            color: #4CAF50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invoice-header">
+            <h1>Revolutionizing Agriculture</h1>
+        </div>
+        <div class="invoice-details">
+            <p><strong>Order ID:</strong> {{ orderid }}</p>
+            <p><strong>Date:</strong> {{ dat }}</p>
+            <p><strong>Delivery Address:</strong> {{ daddress }}</p>
+        </div>
+        <table class="invoice-items">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in cart %}
+                <tr>
+                    <td>{{ item.product_name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.product_name.price }}</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+            0
+        </table>
+        
+        <div class="footer">
+            <p>Thank you for choosing Revolutionizing Agriculture!</p>
+        </div>
+    </div>
+</body>
+</html>

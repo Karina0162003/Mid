@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:20:04 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>{% block title %} {% endblock %}Revolutionizing Agriculture platform</title>
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static '/css/venobox.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/scroll_button.css' %}">
+    <link rel="stylesheet" href="{% static '/css/custom_spacing.css' %}">
+    <link rel="stylesheet" href="{% static '/css/jquery.exzoom.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static '/css/percircle.css' %}">
+    <link rel="stylesheet" href="{% static '/css/ranger_slider.css' %}">
+    <link rel="stylesheet" href="{% static '/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static '/css/mobile_menu.css' %}">
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!--========================={% static '
+        TOPBAR START
+    ==========================-->
+   <section class="topbar">
+    <div class="container">
+        <div class="row">
+            <ul class="topbar_info d-flex justify-content-end align-items-center">
+                <li class="mr-3">
+                    {% if request.session.userid %}
+                        <a href="#">Welcome,{{request.session.email}}</a>
+                    {% else %}
+                        <a href="#">Welcome,User</a>
+                    {% endif %}
+                </li>
+                <li class="mr-3">
+                    <a href="mailto:revolutionizingAgriculture@gmail.com"><i class="fas fa-envelope-open-text"></i> revolutionizingAgriculture@gmail.com</a>
+                </li>
+                {% if request.session.userid %}
+                    <li><a href="{% url 'logout' %}">Log-Out</a></li>
+                {% else %}
+                    <li><a href="{% url 'sign_in' %}">Sign In</a></li>
+                    <li><a href="{% url 'sign_up' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!--=========================
+        TOPBAR END
+    ==========================-->
+
+
+    <!--=========================
+        HEADER START
+    ==========================-->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="header_logo_area">
+                        <a href="index" class="header_logo">
+                            <img src="{% static 'images/logo.png' %}" alt="Orgini" class="img-fluid w-100">
+                        </a>
+                        <div class="mobile_menu_icon d-block d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="mobile_menu_icon"><i class="far fa-stream menu_icon_bar"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </header>
+    <!--=========================
+        HEADER END
+    ==========================-->
+
+
+    <!--=========================
+        MENU START
+    ==========================-->
+
+    <!--=========================
+        MENU END
+    ==========================-->
+
+
+    <!--============================
+        MOBILE MENU START
+    ==============================-->
+
+    <!--============================
+        MOBILE MENU END
+    ==============================-->
+    <!--=========================
+        BREADCRUMB START
+    ==========================-->
+
+
+    <!--=========================
+        BLOG DETAILS START
+    ==========================-->
+    <section class="blog_details pt_10 xs_pt_80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-19 wow fadeInLeft">
+                    <div class="blog_det_area">
+                        <div class="blog_det_img">
+                            <img src="{% static 'images/ifo1.jpg' %}" alt="blog images" class="img-fluid w-100 ">
+                        </div>
+                        <div class="blog_det_text_header d-flex flex-wrap">
+                            <ul class="left d-flex flex-wrap">
+                                <li><span></span></li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="blog_det_text">
+                            <h2>Vermicompost: Cultivating Sustainable Agriculture through Nature's Black Gold</h2>
+                            <h5>Introduction</h5>
+<p>In today's world, sustainable and eco-friendly agricultural practices are no longer a choice but a necessity. Traditional farming methods often lead to soil degradation, nutrient depletion, and environmental harm. Enter vermicompost, often referred to as "black gold" or "worm castings." This natural organic fertilizer is created by harnessing the power of earthworms to transform organic waste into a nutrient-rich and eco-friendly soil conditioner. In this blog, we will explore the use of vermicompost in agriculture, its remarkable benefits, and how it contributes to sustainable farming practices.</p>
+                            <h5>What is Vermicompost?</h5>
+
+
+                            <p>Vermicompost is a nutrient-rich organic fertilizer and soil conditioner produced through the decomposition of organic matter by earthworms. It's a natural, eco-friendly alternative to chemical fertilizers, and its production follows a simple yet fascinating process:</p>
+        <p><b>1.Worm Selection: </b>Specialized composting worms, such as red wigglers (Eisenia fetida) or African nightcrawlers (Eudrilus eugeniae), are chosen for their ability to consume large quantities of organic matter and efficiently convert it into vermicompost</p>
+
+<p><b>2.Feeding the Worms:</b> These worms are introduced to a carefully managed environment where they are provided with a mixture of organic materials. This can include kitchen scraps, garden waste, paper, cardboard, and more. The worms feed on this organic matter.</p>
+
+<p><b>3.Digestion and Decomposition:</b> As the worms digest the organic material, it passes through their digestive system, undergoing a process known as vermicomposting. During this process, the organic matter is broken down into a more stable and nutrient-rich form.</p>
+
+<p><b>4.Harvesting the Castings:</b> The resulting material, known as worm castings or vermicompost, is rich in essential nutrients, humus, and beneficial microorganisms. It is then harvested and used as a potent organic fertilizer and soil conditioner</p>
+<h5>Benefits of Vermicompost in Agriculture</h5>
+<p><b>1.Nutrient-Rich Soil Amendment:</b> Vermicompost is a treasure trove of essential nutrients such as nitrogen, phosphorus, potassium, calcium, magnesium, and micronutrients. These nutrients are present in a form that is readily available to plants, promoting healthy growth.</p>
+        <p><b>2.Improved Soil Structure:</b> Vermicompost enhances soil structure by increasing its water-holding capacity and aeration. It helps clay soils drain better and improves the water retention of sandy soils, creating an ideal environment for plant roots.</p>
+<p><b>3.Enhanced Microbial Activity:</b> Vermicompost is teeming with beneficial microorganisms like bacteria and fungi. These microbes play a crucial role in breaking down organic matter further, releasing nutrients for plant uptake, and suppressing harmful pathogens.</p>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+        BLOG DETAILS END
+    ==========================-->
+
+
+
+    <!--=========================
+        FOOTER START
+    ==========================-->
+     <footer class="mt_200 xs_mt_160" style="background: url({% static 'images/footer_bg.jpg' }%);">
+        <div class="footer_overlay">
+            <div class="container">
+                <div class="footer_info" style="background: url(images/footer_info_bg.jpg);">
+                    <div class="row wow fadeInUp">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_1.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Free Shipping</h3>-->
+<!--                                    <p>Worldwide</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_2.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Helpline</h3>-->
+<!--                                    <p>+1256 25632 565</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_3.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>24/7 Support</h3>-->
+<!--                                    <p>Free For Customers</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_4.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                   <h3>Returns</h3>-->
+<!--                                    <p>30 Days Free Exchanges</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-8">
+                        <div class="footer_logo_area">
+
+
+                            <span>Mail :<a href="revolutionizingAgriculture@gmail.com">revolutionizingAgri@gmail.com</a></span>
+                            <p>Location : Ahmedabad,india</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Category</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Rent on machinery</a></li>
+                                <li><a href="{% url 'index' %}">Eqvipments</a></li>
+                                <li><a href="{% url 'index' %}">Pesticides</a></li>
+                                <li><a href="{% url 'index' %}">Fertilizer</a></li>
+                                <li><a href="{% url 'index' %}">Seeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Products</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Field Crops</a></li>
+                                <li><a href="{% url 'index' %}">Flower crops</a></li>
+                                <li><a href="{% url 'index' %}">Fruit crops</a></li>
+                                <li><a href="{% url 'index' %}">Vegetable crops</a></li>
+                                <li><a href="{% url 'index' %}">Tur seeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Rent on machinery</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Agriculture baler</a></li>
+                                <li><a href="{% url 'index' %}">Multicrop thresher</a></li>
+                                <li><a href="{% url 'index' %}">Fertilizer spreader</a></li>
+                                <li><a href="{% url 'index' %}">Mounted disc plough</a></li>
+                                <li><a href="{% url 'index' %}">Tractor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a href="about_us">About Us</a></li>
+
+                                <li><a href="contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
+    <!--=========================
+        FOOTER END
+    ==========================-->
+
+
+    <!--==========================
+        SCROLL BUTTON START
+    ===========================-->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!--==========================
+        SCROLL BUTTON END
+    ===========================-->
+
+
+    <!--jquery library js-->
+    <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>
+    <!--bootstrap js-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!--font-awesome js-->
+    <script src="{% static 'js/Font-Awesome.js' %}"></script>
+    <!--slick slider js-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!--isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--venobox js-->
+    <script src="{% static 'js/venobox.min.js' %}"></script>
+    <!--marquee animi-->
+    <script src="{% static 'js/jquery.marquee.min.js' %}"></script>
+    <!--simply countdown js-->
+    <script src="{% static 'js/simplyCountdown.js' %}"></script>
+    <!--scroll button js-->
+    <script src="{% static 'js/scroll_button.js' %}"></script>
+    <!--counter-up js-->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countup.min.js' %}"></script>
+    <!--exzoom js-->
+    <script src="{% static 'js/jquery.exzoom.js' %}"></script>
+    <!--nice select js-->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <!--percircle js-->
+    <script src="{% static 'js/percircle.js' %}"></script>
+    <!--price ranger js-->
+    <script src="{% static 'js/ranger_jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/ranger_slider.js' %}"></script>
+    <!--select2 js-->
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <!--sticky sidebar js-->
+    <script src="{% static 'js/sticky_sidebar.js' %}"></script>
+    <!--aos js-->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!--main/custom js-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:21:21 GMT -->
+</html>

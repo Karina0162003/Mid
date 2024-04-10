@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:20:04 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>{% block title %} {% endblock %}Revolutionizing Agriculture platform</title>
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static '/css/venobox.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/scroll_button.css' %}">
+    <link rel="stylesheet" href="{% static '/css/custom_spacing.css' %}">
+    <link rel="stylesheet" href="{% static '/css/jquery.exzoom.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static '/css/percircle.css' %}">
+    <link rel="stylesheet" href="{% static '/css/ranger_slider.css' %}">
+    <link rel="stylesheet" href="{% static '/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static '/css/mobile_menu.css' %}">
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!--========================={% static '
+        TOPBAR START
+    ==========================-->
+   <section class="topbar">
+    <div class="container">
+        <div class="row">
+            <ul class="topbar_info d-flex justify-content-end align-items-center">
+                <li class="mr-3">
+                    {% if request.session.userid %}
+                        <a href="#">Welcome,{{request.session.email}}</a>
+                    {% else %}
+                        <a href="#">Welcome,User</a>
+                    {% endif %}
+                </li>
+                <li class="mr-3">
+                    <a href="mailto:revolutionizingAgriculture@gmail.com"><i class="fas fa-envelope-open-text"></i> revolutionizingAgriculture@gmail.com</a>
+                </li>
+                {% if request.session.userid %}
+                    <li><a href="{% url 'logout' %}">Log-Out</a></li>
+                {% else %}
+                    <li><a href="{% url 'sign_in' %}">Sign In</a></li>
+                    <li><a href="{% url 'sign_up' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!--=========================
+        TOPBAR END
+    ==========================-->
+
+
+    <!--=========================
+        HEADER START
+    ==========================-->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="header_logo_area">
+                        <a href="index" class="header_logo">
+                            <img src="{% static 'images/logo.png' %}" alt="Orgini" class="img-fluid w-100">
+                        </a>
+                        <div class="mobile_menu_icon d-block d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="mobile_menu_icon"><i class="far fa-stream menu_icon_bar"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </header>
+    <!--=========================
+        HEADER END
+    ==========================-->
+
+
+    <!--=========================
+        MENU START
+    ==========================-->
+
+    <!--=========================
+        MENU END
+    ==========================-->
+
+
+    <!--============================
+        MOBILE MENU START
+    ==============================-->
+
+    <!--============================
+        MOBILE MENU END
+    ==============================-->
+    <!--=========================
+        BREADCRUMB START
+    ==========================-->
+
+
+    <!--=========================
+        BLOG DETAILS START
+    ==========================-->
+    <section class="blog_details pt_10 xs_pt_80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-19 wow fadeInLeft">
+                    <div class="blog_det_area">
+                        <div class="blog_det_img">
+                            <img src="{% static 'images/ifo1.jpg' %}" alt="blog images" class="img-fluid w-100 ">
+                        </div>
+                        <div class="blog_det_text_header d-flex flex-wrap">
+                            <ul class="left d-flex flex-wrap">
+                                <li><span></span></li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="blog_det_text">
+                            <h2>Multiplex LIQUID-N(Nitrogen 32%) Fertilizer</h2>
+                            <p>किसानों को अब यूरिया बोरी में नहीं, बल्कि बंद बोतल मिलेगा। मल्टीप्लेक्स ग्रुप ऑफ़ कम्पनीज ने एक नया क्रन्तिकारी उत्पाद बाजार में उतारा है जो किसानो के लिए एक वरदान के रूप में साबित हुआ है|</p>
+                           <h5> मल्टीप्लेक्स लिक्विड - एन क्या है (What is Multiplex Liquid-N)</h5>
+                            <p>मल्टीप्लेक्स लिक्विड - एन (Liquid-N) , ठोस यूरिया का ही एक तरल रूप है। इसके 500 एम.एल. की एक बोतल में ३२ प्रतिशत नाइट्रोजन होता है, जो सामान्य यूरिया के एक बोरी के बराबर नाइट्रोजन पोषक तत्व प्रदान करता है।
+
+इसमें नाइट्रोजन के तीन अवशोषित रूप होते हैं, अर्थात् यूरिया-एमाइड रूप (16.5%), अमोनियाकल रूप (7.5%), नाइट्रेट रूप (7.5%) होता है |</p>
+
+
+                            <p>यह तरल यूरिया किसानों के लिए काफी सुविधाजनक और किफायती है, और मल्टीप्लेक्स के वैज्ञानिकों ने इस तरल यूरिया को कम से कम ५० से अधिक फसलों पर सफल परीक्षण करके ही इसे बनाया है। लिक्विड-एन, वानस्पतिक विकास और पौधों की प्रजनन वृद्धि के दौरान फसल की आवश्यकतानुसार नाइट्रोजन की अच्छी आपूर्ति सुनिश्चित करने मदद करता है जिससे अच्छी पैदावार और उच्च गुणवत्ता वाली उपज प्राप्त होती है।</p>
+
+<p>यह तरल यूरिया किसानों के लिए काफी सुविधाजनक और किफायती है, और मल्टीप्लेक्स के वैज्ञानिकों ने इस तरल यूरिया को कम से कम ५० से अधिक फसलों पर सफल परीक्षण करके ही इसे बनाया है। लिक्विड-एन, वानस्पतिक विकास और पौधों की प्रजनन वृद्धि के दौरान फसल की आवश्यकतानुसार नाइट्रोजन की अच्छी आपूर्ति सुनिश्चित करने मदद करता है जिससे अच्छी पैदावार और उच्च गुणवत्ता वाली उपज प्राप्त होती है।</p>
+<h5>मल्टीप्लेक्स लिक्विड - एन की विशेषताएं (Benefits of Multiplex Liquid-N)</h5>
+
+<p>यह पौधों द्वारा आसानी से अवशोषित होता है और नाइट्रोजन को तेजी से आत्मसात करने में मदद करता है।</p>
+<p>पौधे की ताक़त में उल्लेखनीय वृद्धि करता है, और पत्तियों में हरा रंग प्रदान करता है जिससे प्रकाश संश्लेषण बढ़ता है, परिणामस्वरूप गुणवत्तापूर्ण उपज प्राप्त होती है।</p>
+<p>यह तरल नाइट्रोजन उर्वरक पौधों के पोषण के लिए काफी प्रभावी और असरदार है। इससे फसलों की गुणवत्ता में सुधार होता है।</p>
+<p>लिक्विड - एन भूमिगत जल की गुणवत्ता सुधारने में मदद करता है। ग्लोबल वार्मिंग को कम करने में अहम भूमिका निभाता है।</p>
+<h5>मल्टीप्लेक्स लिक्विड - एन का छिड़काव कैसे करें? (How to use Multiplex Liquid-N)</h5>
+
+<p>छिड़काव के लिए एक लीटर पानी में 5 मिलीलीटर मल्टीप्लेक्स लिक्विड - एन मिलाना होता है। एक फसल में दो बार लिक्विड - एन का छिड़काव किया जाता है। विशेषज्ञों का कहना है कि जब हम पत्तियों पर इसका छिड़काव करते हैं तो सारा का सारा नाइट्रोजन सीधे पत्तियों में चला जाता है। इसलिए यह परंपरागत यूरिया की तुलना में ज्यादा कारगर है।
+<h5>अक्सर पूछे जाने वाले प्रश्न (FAQ) - मल्टीप्लेक्स लिक्विड-एन</h5>
+<h6><b>1) लिक्विड एन को काम करने में कितना समय लगता है?</b></h6>
+
+<p>लिक्विड-एन के 2 पर्ण स्प्रे करने की सिफारिश की जाती है। एक स्प्रे सक्रिय टिलरिंग/ब्रांचिंग चरण में होना चाहिए (अंकुरण के 30-35 दिन बाद या रोपाई के 20-25 दिन बाद) और दूसरा पहले स्प्रे के बाद 20-25 दिनों के अंतराल पर होना चाहिए। या फसल में फूल आने से पहले.</p>
+
+                            <h6><b>2) प्रति लीटर पानी में कितना लिक्विड एन मिलाना चाहिए ?</b></h6>
+
+
+<p>एक लीटर पानी में 5 मिलीलीटर मल्टीप्लेक्स लिक्विड एन (32% एन) मिलाएं और फसल की सक्रिय वृद्धि के चरण में पत्तियों पर स्प्रे करें। नोट: सामान्य तौर पर, 500 एमएल मात्रा एक एकड़ क्षेत्र में नैपसैक स्प्रेयर, बूम या के माध्यम से छिड़काव करने के लिए पर्याप्त है।
+</p><h6><b>3) मल्टीप्लेक्स लिक्विड एन का क्या लाभ है?</b></h6>
+
+<p>मल्टीप्लेक्स लिक्विड एन (तरल नाइट्रोजन उर्वरक) विशेष रूप से फसलों द्वारा पोषक तत्व ग्रहण में सुधार के लिए तैयार किया गया है। यह इसके अनूठे फॉर्मूलेशन के कारण है, जो यह सुनिश्चित करता है कि नाइट्रोजन समय के साथ धीरे-धीरे जारी होती है, जिससे फसलों को पोषक तत्वों की निरंतर आपूर्ति मिलती है।</p>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+        BLOG DETAILS END
+    ==========================-->
+
+
+
+    <!--=========================
+        FOOTER START
+    ==========================-->
+    <footer class="mt_200 xs_mt_160" style="background: url({% static 'images/footer_bg.jpg' }%);">
+        <div class="footer_overlay">
+            <div class="container">
+                <div class="footer_info" style="background: url(images/footer_info_bg.jpg);">
+                    <div class="row wow fadeInUp">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_1.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Free Shipping</h3>-->
+<!--                                    <p>Worldwide</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_2.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Helpline</h3>-->
+<!--                                    <p>+1256 25632 565</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_3.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>24/7 Support</h3>-->
+<!--                                    <p>Free For Customers</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_info_item">
+<!--                                <div class="icon">-->
+<!--                                    <img src="{% static 'images/footer_info_icon_4.png' %}" alt="Icon" class="img-fluid w-100">-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                   <h3>Returns</h3>-->
+<!--                                    <p>30 Days Free Exchanges</p>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-8">
+                        <div class="footer_logo_area">
+
+
+                            <span>Mail :<a href="revolutionizingAgriculture@gmail.com">revolutionizingAgri@gmail.com</a></span>
+                            <p>Location : Ahmedabad,india</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Category</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Rent on machinery</a></li>
+                                <li><a href="{% url 'index' %}">Eqvipments</a></li>
+                                <li><a href="{% url 'index' %}">Pesticides</a></li>
+                                <li><a href="{% url 'index' %}">Fertilizer</a></li>
+                                <li><a href="{% url 'index' %}">Seeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Products</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Field Crops</a></li>
+                                <li><a href="{% url 'index' %}">Flower crops</a></li>
+                                <li><a href="{% url 'index' %}">Fruit crops</a></li>
+                                <li><a href="{% url 'index' %}">Vegetable crops</a></li>
+                                <li><a href="{% url 'index' %}">Tur seeds</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Rent on machinery</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Agriculture baler</a></li>
+                                <li><a href="{% url 'index' %}">Multicrop thresher</a></li>
+                                <li><a href="{% url 'index' %}">Fertilizer spreader</a></li>
+                                <li><a href="{% url 'index' %}">Mounted disc plough</a></li>
+                                <li><a href="{% url 'index' %}">Tractor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-md-4">
+                        <div class="footer_link">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a href="about_us">About Us</a></li>
+
+                                <li><a href="contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
+    <!--=========================
+        FOOTER END
+    ==========================-->
+
+
+    <!--==========================
+        SCROLL BUTTON START
+    ===========================-->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!--==========================
+        SCROLL BUTTON END
+    ===========================-->
+
+
+    <!--jquery library js-->
+    <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>
+    <!--bootstrap js-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!--font-awesome js-->
+    <script src="{% static 'js/Font-Awesome.js' %}"></script>
+    <!--slick slider js-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!--isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--venobox js-->
+    <script src="{% static 'js/venobox.min.js' %}"></script>
+    <!--marquee animi-->
+    <script src="{% static 'js/jquery.marquee.min.js' %}"></script>
+    <!--simply countdown js-->
+    <script src="{% static 'js/simplyCountdown.js' %}"></script>
+    <!--scroll button js-->
+    <script src="{% static 'js/scroll_button.js' %}"></script>
+    <!--counter-up js-->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countup.min.js' %}"></script>
+    <!--exzoom js-->
+    <script src="{% static 'js/jquery.exzoom.js' %}"></script>
+    <!--nice select js-->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <!--percircle js-->
+    <script src="{% static 'js/percircle.js' %}"></script>
+    <!--price ranger js-->
+    <script src="{% static 'js/ranger_jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/ranger_slider.js' %}"></script>
+    <!--select2 js-->
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <!--sticky sidebar js-->
+    <script src="{% static 'js/sticky_sidebar.js' %}"></script>
+    <!--aos js-->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!--main/custom js-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from html.themefax.com/orgini/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2024 08:21:21 GMT -->
+</html>
+<body>
+
+</body>
+</html>
